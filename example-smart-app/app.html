@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <script src='dist/fhir-client-v22.js'>
+ </script>
+</head>
+
+<body>
+
+ <script>
+      FHIR.oauth2.authorize({
+        'client_id': '79710642-a802-47a3-8863-78141f1c121b',
+        'scope':  'patient/Patient.read patient/launch', 'redirect_uri': 'https://pat-ascendtek.github.io/smart-on-fhir-tutorial/example-smart-app/app.html'
+      });
+ </script>
+
+</body>
+
+</html>
